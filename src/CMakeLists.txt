@@ -1,7 +1,8 @@
 # NovaPhy core static library
 
 add_library(novaphy_core STATIC
-    stub.cpp
+    math/spatial.cpp
+    math/math_utils.cpp
 )
 
 target_include_directories(novaphy_core PUBLIC
