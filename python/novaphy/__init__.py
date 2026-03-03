@@ -72,6 +72,17 @@ from novaphy._core import (
     inverse_dynamics,
     mass_matrix_crba,
     forward_dynamics,
+    # Fluid simulation
+    SPHKernels,
+    FluidBlockDef,
+    ParticleState,
+    SpatialHashGrid,
+    generate_fluid_block,
+    PBFSettings,
+    PBFSolver,
+    FluidWorld,
+    BoundaryParticle,
+    sample_model_boundaries,
 )
 
 # Optional IPC support (requires CUDA + libuipc)
@@ -114,6 +125,16 @@ __all__ = [
     "inverse_dynamics",
     "mass_matrix_crba",
     "forward_dynamics",
+    "SPHKernels",
+    "FluidBlockDef",
+    "ParticleState",
+    "SpatialHashGrid",
+    "generate_fluid_block",
+    "PBFSettings",
+    "PBFSolver",
+    "FluidWorld",
+    "BoundaryParticle",
+    "sample_model_boundaries",
 ]
 
 # Conditionally export IPC symbols
